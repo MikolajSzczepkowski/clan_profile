@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>clan_profile</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,700italic,700,300italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./style/basic_style.css">
+	<link rel="stylesheet" href="./style/clan_profile_style.css">
+</head>
+<body>
+<div class="container-fluid">
+	<nav id="navigation" class="row text-center nav-wrapper">
+		<div class="col-md-1 col-md-offset-1">
+			<div id="menu" class="menu-size text-center pointer border-bottom">
+				<img src="images/icon-menu.png" alt="menu">
+			</div>
+		</div>
+		<div class="col-md-1 col-md-offset-1">
+			<div id="target" class="menu-size text-center pointer border-bottom">
+				<img src="images/target.png" alt="target">
+			</div>
+		</div>
+		<div class="col-md-2 col-md-offset-3">
+			<div id="user" class="menu-size text-center pointer border-bottom">
+				<img src="images/user.png" alt="user">
+			</div>
+			User 01
+		</div>
+		<div id="chat" class="col-md-2 col-md-offset-1">
+			<div class="menu-size text-center pointer border-bottom">
+				<img src="images/chat.png" alt="chat">
+			</div>
+		</div>
+	</nav>
+	<div class="friends-row">
+		<div id="friends" class="col-xs-12 col-md-3 col-lg-2 friends">
+			<div class="col-xs-12 friends-search-wrapper text-center">
+				<ul class="col-xs-12">
+					<li class="friends-search-img"></li>
+					<li class="friends-search-img"></li>
+					<li class="friends-search-img"></li>
+				</ul>
+				<label class="col-xs-12" for="userSearch">
+					<input type="text" id="userSearch" placeholder="Search users...">
+				</label>
+			</div>
+			<div class="col-xs-12 text-center friends-header">friends(34)</div>
+				<ul class="col-xs-12 friends-list text-left">
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li class="friends-active"><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li class="friends-active"><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li class="friends-active"><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<ul class="row friends-list-buttons">
+						<li><img src="images/message.png" alt="massage" class="friends-list-buttons"></li>
+						<li><img src="images/user.png" alt="user" class="friends-list-buttons"></li>
+					</ul>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+				</ul>
+		</div>
+	</div>
+</div>
+<div class="container-fluid login">
+	<div class="col-xs-12 col-md-2 col-md-offset-7">
+		<div class="login-text text-uppercase text-center pointer">login/register</div>
+	</div>
+</div>
+<div class="container-fluid social">
+</div>
+<div class="container">
+	<div class="main">
+		<div class="main-inner-wrapper">
+			<div class="row top-row">
+				<div class="col-xs-2 col-xs-offset-1 player-box text-center">
+					<div class="progress player-box-bar">
+						<span class="badge">70%</span>
+						<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+					</div>
+					<div>
+						<a href="#" class="player-edit"><img src="images/edit.png" alt="edit"></a>
+						<img src="images/player-avatar.jpg" class="player-avatar-box">
+					</div>
+					<div class="col-xs-12 player-icon-wrapper">
+						<div class="col-xs-4 player-icon">
+							<a href="#" class="col-xs-1"><img src="images/add-clan.gif" alt="add to clan"></a>
+						</div>
+						<div class="col-xs-4 player-icon">
+							<a href="#" class="col-xs-1"><img src="images/remove-clan.png" alt="remove from clan"></a>
+						</div>
+						<div class="col-xs-4 player-icon">
+							<a href="#" class="col-xs-1"><img src="images/like.png" alt="like"></a>
+						</div>
+					</div>
+					<div class="col-xs-12 player-likes">67<img src="images/liked.png"></div>
+				</div>
+				<div class="col-xs-12 col-sm-4 player-name-box">
+					<h2>Team Amazing</h2>
+					<p>created on 1, Sep 2015</p>
+				</div>
+				<div class="col-xs-1 col-sm-offset-3 top-row-social">
+					<a href="#" class="col-xs-1">
+						<img src="images/facebook-white.png" alt="facebook">
+					</a>
+				</div>
+			</div>
+			<div class="row middle-row">
+				<p class="col-md-2 col-md-offset-1">Clan ID: 3244554</p>
+				<p class="col-md-2">Leader: PSC-Paul</p>
+				<p class="col-md-4 col-md-offset-3">Battlefield 4 Team</p>
+			</div>
+			<div class="row bottom-row">
+				<nav class="col-xs-12 col-sm-1 text-center profile-menu">
+					<a href="#" class="active">
+						<img src="images/user-white.png">
+					</a>
+					<a href="#">
+						<img src="images/refresh.png">
+					</a>
+					<a href="#">
+						<img src="images/cup-white.png">
+					</a>
+				</nav>
+				<div class="col-xs-12 col-sm-7 bottom-main">
+					<div class="bottom-inner-wrapper">
+						<div class="col-xs-12 profile-achievements">
+							<p class="text-center profile-achievements-header">Featured requests</p>
+							<ul class="profile-list featured-requests">
+								<li><a href="#">PSC-Paul</a> wanst to join your clan<span>read request</span>
+								</li>
+								<li><a href="#">Crazy Joe</a> wanst to join your clan<span>read request</span>
+								</li>
+								<li><a href="#">Leonidas</a> wanst to join your clan<span>read request</span>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xs-12 profile-achievements">
+							<p class="text-center profile-achievements-header"></p>
+							<p class="col-xs-12 profile-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum facilis, nihil incidunt. Enim dicta aliquam provident rerum recusandae quo cum nulla harum.</p>
+						</div>
+						<div class="col-xs-12 profile-achievements">
+							<p class="text-center profile-achievements-header">Featured players</p>
+							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center featured-teams">
+								<div>
+									<h6>Leader</h6>
+									<img src="images/player-avatar.jpg">
+									<p>Team Amazing</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 profile-achievements">
+							<p class="text-center profile-achievements-header">Upcoming matches</p>
+							<ul class="profile-list text-center">
+								<li>23 Aug 2015 (Rocket League) 1v1 OpenCup #1
+									<img src="images/cup.png" alt="cup">
+								</li>
+								<li>23 Aug 2015 (Rocket League) 1v1 OpenCup #1
+									<img src="images/cup.png" alt="cup">
+								</li>
+								<li>23 Aug 2015 (Rocket League) 1v1 OpenCup #1
+									<img src="images/cup.png" alt="cup">
+								</li>
+								<li>23 Aug 2015 (Rocket League) 1v1 OpenCup #1
+									<img src="images/cup.png" alt="cup">
+								</li>
+								<li>23 Aug 2015 (Rocket League) 1v1 OpenCup #1
+									<img src="images/cup.png" alt="cup">
+								</li>
+								<li>23 Aug 2015 (Rocket League) 1v1 OpenCup #1
+									<img src="images/cup.png" alt="cup">
+								</li>
+								<li>23 Aug 2015 (Rocket League) 1v1 OpenCup #1
+									<img src="images/cup.png" alt="cup">
+								</li>
+							</ul>
+						</div>
+						<div class="col-xs-12 profile-achievements">
+							<p class="text-center profile-achievements-header">Latest matches</p>
+							<div class="col-xs-12 col-lg-6 latest-matches-box-wrapper">
+								<p>23 Aug 2015 (Rocket League) 1v1
+									<img src="images/cup.png" alt="cup">
+								</p>
+								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 latest-matches-box winner">
+									<div class="progress latest-matches-box-bar">
+										<span class="badge">70%</span>
+										<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+									</div>
+									<div>
+										<div href="#" class="img-cover-box">2</div>
+										<img src="images/player-avatar.jpg" class="latest-matches-img">
+									</div>
+									<p class="col-xs-12 text-center">Team A</p>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 latest-matches-box">
+									<div class="progress latest-matches-box-bar">
+										<span class="badge">70%</span>
+										<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+									</div>
+									<div>
+										<div href="#" class="img-cover-box">0</div>
+										<img src="images/player-avatar.jpg" class="latest-matches-img">
+									</div>
+									<p class="col-xs-12 text-center">Team B</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-lg-6 latest-matches-box-wrapper">
+								<p>23 Aug 2015 (Rocket League) 1v1
+									<img src="images/cup.png" alt="cup">
+								</p>
+								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 latest-matches-box winner">
+									<div class="progress latest-matches-box-bar">
+										<span class="badge">70%</span>
+										<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+									</div>
+									<div>
+										<div href="#" class="img-cover-box">2</div>
+										<img src="images/player-avatar.jpg" class="latest-matches-img">
+									</div>
+									<p class="col-xs-12 text-center">Team A</p>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 latest-matches-box">
+									<div class="progress latest-matches-box-bar">
+										<span class="badge">70%</span>
+										<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+									</div>
+									<div>
+										<div href="#" class="img-cover-box">0</div>
+										<img src="images/player-avatar.jpg" class="latest-matches-img">
+									</div>
+									<p class="col-xs-12 text-center">Team B</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 profile-views">
+					<div class="col-xs-12">
+						<h5 class="text-center">Profile views (23)</h5>
+						<p class="col-xs-12 online-player">
+							<img src="images/team.png" alt="team">
+							Devil23 
+							<span>23 Aug 2015</span>
+						</p>
+						<p class="col-xs-12">
+							<img src="images/team.png" alt="team">
+							Devil23 
+							<span>23 Aug 2015</span>
+						</p>
+						<p class="col-xs-12">
+							<img src="images/team.png" alt="team">
+							Devil23 
+							<span>23 Aug 2015</span>
+						</p>
+						<p class="col-xs-12 online-player">
+							<img src="images/team.png" alt="team">
+							Devil23 
+							<span>23 Aug 2015</span>
+						</p>
+						<p class="col-xs-12 online-player">
+							<img src="images/team.png" alt="team">
+							Devil23 
+							<span>23 Aug 2015</span>
+						</p>
+						<p class="col-xs-12">
+							<img src="images/team.png" alt="team">
+							Devil23 
+							<span>23 Aug 2015</span>
+						</p>
+						<p class="col-xs-12">
+							<img src="images/team.png" alt="team">
+							Devil23 
+							<span>23 Aug 2015</span>
+						</p>	
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 game-chat">
+					<div class="col-xs-12">
+						<h5 class="text-center">Chat: 3244554</h5>
+						<div class="game-chat-inner">							
+							<h6 class="text-center">20.11.2015</h6>
+							<ul class="col-xs-12">
+								<li>
+									<p class="col-xs-12 online-player">
+										<img src="images/team.png" alt="team">
+										Devil23 	
+									</p>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:52</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:52</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:52</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:53</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">17:52</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">17:58</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:59</span>
+								</li>
+								<li>
+									<p class="col-xs-12 online-player">
+										<img src="images/team.png" alt="team">
+										Crazy_Joe
+									</p>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:52</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:52</span>
+								</li>
+							</ul>
+							<h6 class="text-center">19.11.2015</h6>
+							<ul class="col-xs-12">
+								<li>
+									<p class="col-xs-12 online-player">
+										<img src="images/team.png" alt="team">
+										Devil23 	
+									</p>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:52</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:52</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:52</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:53</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">17:52</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">17:58</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:59</span>
+								</li>
+								<li>
+									<p class="col-xs-12 online-player">
+										<img src="images/team.png" alt="team">
+										Crazy_Joe 
+									</p>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:52</span>
+								</li>
+								<li>
+									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
+									<span class="col-xs-2">16:52</span>
+								</li>
+							</ul>
+						</div>
+						<form name="chat-message" id="chatMessage" class="new-message">
+							<textarea name="user-message" form="chatMessage" class="col-xs-12"></textarea>
+							<input type="submit" name="submit-message" value="send" class="col-xs-4 col-sm-5 text-center">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="./js/main_app.js"></script>
+<script src="./js/clan_profile_app.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
