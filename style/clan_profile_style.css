@@ -7,7 +7,7 @@
 	background-image: url(./../images/top-background.jpg);
 	background-size: cover;
 }
-.top-row a img:hover{
+.top-row a:hover img{
 	transform: translateY(-5px);
 }
 .top-row a{
@@ -19,13 +19,13 @@
 	width: 42px;
 }
 .player-box{
-	margin: -5px 0 0 0;
+	margin: -1px 0 0 0;
 }
 .player-box-bar{
 	width: 120px;
 	height: 3px;
 	margin-top: -7px;
-	margin-bottom: 3px;
+	margin-bottom: 5px;
 	background: #d8d8d8;
 }
 .box-bar-cover{
@@ -34,17 +34,29 @@
 .progress .badge{
 	position: absolute;
     margin-top: -20px;
-    margin-left: 82px;
+    margin-left: 22px;
     background: #363636;
-    display: none;
+    opacity: 0;
+}
+.progress:hover .badge{
+	opacity: 1;
 }
 .player-avatar-box{
 	width: 120px;
-	border: 2px solid #e43f3f;;
+	border: 3px solid #e43f3f;
+	cursor: pointer;
+}
+.player-avatar-wrapper:hover .player-avatar-box{
+	opacity: 0.5;
 }
 .player-edit{
-	position: absolute;
 	margin: 0 0 0 85px;
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+}
+.player-avatar-wrapper:hover .player-edit{
+	opacity: 1;
 }
 .player-icon-wrapper{
 	width: 130px;
@@ -56,6 +68,13 @@
 	width: 40.5px;
 	margin: 0 1px;
 	padding: 0;
+}
+.player-icon:nth-of-type(1){
+	width: 80px;
+	margin-right: 4px;
+}
+.player-icon:nth-of-type(1) a{
+	width: 80px;
 }
 .player-icon a{
 	width: 35px;
@@ -109,6 +128,9 @@
     margin: 0 0 7px 0;
     background: #e43f3f;
 }
+.profile-menu a:hover img{
+	background: #363636; 
+}
 a.active img{ 
     background: #363636;
 }
@@ -139,6 +161,9 @@ a.active img{
 .profile-list li{
 	padding: 0 0 10px 0;
 }
+.profile-list.upcoming-matches li:hover{
+	color: #e43f3f;
+}
 .profile-list img{
 	width: 20px;
 }
@@ -163,6 +188,20 @@ a.active img{
 	font-style: italic;
 	font-size: 12px;
 	margin: 0 0 15px 0;
+	cursor: pointer;
+}
+.latest-matches-box-wrapper p:hover{
+	color: #e43f3f;
+}
+.latest-matches-box-wrapper span{
+	margin: 140px 0 0 130px;
+	padding: 0 8px 2px 8px;
+	position: absolute;
+	background: #e43f3f;
+	color: #fff;
+	font-weight: bold; 
+	border-radius: 5px;
+	z-index: 5;
 }
 .latest-matches-box-wrapper p img{
 	width: 20px;
@@ -170,19 +209,28 @@ a.active img{
 .latest-matches-box{
 	padding-left: 0;
 	padding-bottom: 15px;
+	cursor: pointer;
+}
+.latest-matches-box:hover img{
+	opacity: 0.5;	
 }
 .latest-matches-box-bar{
 	width: 120px;
 	height: 3px;
-	margin-bottom: 3px;
+	margin-bottom: 5px;
 	background: #d8d8d8;
+}
+.progress.latest-matches-box-bar span{
+	margin-left: 82px;
+	padding: 3px 7px;
+	border-radius: 10px;
 }
 .latest-matches-box-bar .box-bar-cover{
 	background: #363636;
 }
 .latest-matches-img{
 	width: 120px;
-	border: 2px solid #363636;
+	border: 3px solid #363636;
 }
 .latest-matches-box p{
 	width: 120px;
@@ -192,6 +240,10 @@ a.active img{
 	color: #fff;
 	font-weight: normal;
 }
+.latest-matches-box:hover p{
+	background: #1182f5;
+	color: #fff;
+}
 .img-cover-box{
 	width: 32px;
 	height: 32px;
@@ -199,6 +251,7 @@ a.active img{
 	padding: 6px 0 0 12px;
 	background: #363636;
 	position: absolute;
+	z-index: 2;
 	color: #fff;
 	font-weight: bold;
 }
@@ -206,7 +259,7 @@ a.active img{
 	background: #e43f3f;
 }
 .winner .latest-matches-img{
-	border: 2px solid #e43f3f;
+	border: 3px solid #e43f3f;
 }
 .winner .img-cover-box{
 	background: #e43f3f;
@@ -216,6 +269,7 @@ a.active img{
 }
 .featured-teams div{
 	width: 120px;
+	cursor: pointer;
 }
 .featured-teams h6{
 	width: 120px;
@@ -230,9 +284,15 @@ a.active img{
 	background: #363636;
 	margin: 2px 0 10px 0;
 }
+.featured-teams:hover p{
+	background: #1182f5;
+}
 .featured-teams img{
 	width: 120px;
-	border: 2px solid #1182f5;
+	border: 3px solid #1182f5;
+}
+.featured-teams:hover img{
+	opacity: 0.5;
 }
 .game-levels-wrapper{
 	padding: 0px;
@@ -294,6 +354,13 @@ a.active img{
 .profile-views p:hover{
 	background: #d8d8d8;
 }
+.profile-views p a{
+	text-decoration: none;
+	color: #333;
+}
+.profile-views p a:hover, .profile-views p.online a:hover, .game-chat ul li p a:hover{
+	color: #e43f3f;
+}
 .profile-views p span{
 	float: right;
 	padding: 10px 5px 0 0; 
@@ -303,13 +370,13 @@ a.active img{
 	margin: 0 5px 0 0;
 	border: 2px solid #363636; 
 }
-.online-player{
+.profile-views p.online a, .game-chat p.online a{
 	color: #1182f5;
 }
-.online-player span{
+.profile-views p.online span{
 	color: #333;
 }
-.profile-views .online-player img{
+.profile-views p.online img{
 	border: 2px solid #1182f5;
 }
 .game-chat{
@@ -355,7 +422,10 @@ a.active img{
 	font-size: 12px;
 	font-style: italic;
 }
-
+.game-chat p a{
+	text-decoration: none;
+	color: #333;
+}
 .game-chat span{
 	padding-top: 20px;
 	padding-left: 10px;
@@ -365,13 +435,13 @@ a.active img{
 	margin: 0 5px 0 0;
 	border: 2px solid #363636; 
 }
-.online-player{
+.online{
 	color: #1182f5;
 }
-.online-player span{
+.online span{
 	color: #333;
 }
-.game-chat .online-player img{
+.game-chat .online img{
 	border: 2px solid #1182f5;
 }
 p.chat-message{
@@ -395,9 +465,13 @@ p.chat-message{
 	color: #fff;
 	float: right;
 }
+.new-message input:hover{
+	background: #363636;
+}
 .new-message textarea{
 	height: 100px;
 	resize: none;
+	padding: 0 5px;
 }
 @media screen and (min-width: 768px){
 	.player-name-box{
@@ -429,6 +503,9 @@ p.chat-message{
 		border-left: 1px solid #d8d8d8;
 		border-right: 1px solid #d8d8d8; 
 	}
+	.latest-matches-box-wrapper span{
+		margin: 60px 0 0 110px;
+	}
 	.game-levels-wrapper{
 		margin: 0;
 	}
@@ -457,6 +534,9 @@ p.chat-message{
 	}
 	.profile-menu a img{
 		width: 78px;
+	}
+	.latest-matches-box-wrapper span{
+		margin: 60px 0 0 118px;
 	}
 }
 @media screen and (min-width: 1024px){
@@ -490,5 +570,36 @@ p.chat-message{
 	}
 	.profile-menu a img{
 		margin: 0 0 7px 0;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even){
+		padding-left: 15px;
+		padding-right: 0;
+		float: right;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) p{
+		float: right;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) p img{
+		margin: 0 0 0 30px;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box{
+		padding-right: 0;
+		float: right;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box div{
+		float: right;
+	}
+	.latest-matches-box-wrapper span{
+		margin: 60px 0 0 113px;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) span{
+		margin: 92px 0 0 133px;
+	}
+	.latest-matches-box-wrapper .latest-matches-box .progress span{
+		margin: -20px 0 0 82px;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box .box-bar-cover{
+		float: left;
+	}
 	}
 }

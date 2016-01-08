@@ -154,19 +154,16 @@
 						<span class="badge">70%</span>
 						<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
 					</div>
-					<div>
+					<div class="player-avatar-wrapper">
 						<a href="#" class="player-edit"><img src="images/edit.png" alt="edit"></a>
 						<img src="images/player-avatar.jpg" class="player-avatar-box">
 					</div>
 					<div class="col-xs-12 player-icon-wrapper">
-						<div class="col-xs-4 player-icon">
+						<div class="col-xs-8 player-icon">
 							<a href="#" class="col-xs-1"><img src="images/add-clan.gif" alt="add to clan"></a>
 						</div>
 						<div class="col-xs-4 player-icon">
-							<a href="#" class="col-xs-1"><img src="images/remove-clan.png" alt="remove from clan"></a>
-						</div>
-						<div class="col-xs-4 player-icon">
-							<a href="#" class="col-xs-1"><img src="images/like.png" alt="like"></a>
+							<a href="#" id="likeButton" class="col-xs-1"><img src="images/like.png" alt="like"></a>
 						</div>
 					</div>
 					<div class="col-xs-12 player-likes">67<img src="images/liked.png"></div>
@@ -227,7 +224,7 @@
 						</div>
 						<div class="col-xs-12 profile-achievements">
 							<p class="text-center profile-achievements-header">Upcoming matches</p>
-							<ul class="profile-list text-center">
+							<ul class="profile-list upcoming-matches text-center">
 								<li>23 Aug 2015 (Rocket League) 1v1 OpenCup #1
 									<img src="images/cup.png" alt="cup">
 								</li>
@@ -257,6 +254,7 @@
 								<p>23 Aug 2015 (Rocket League) 1v1
 									<img src="images/cup.png" alt="cup">
 								</p>
+								<span>vs.</span>
 								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 latest-matches-box winner">
 									<div class="progress latest-matches-box-bar">
 										<span class="badge">70%</span>
@@ -284,6 +282,7 @@
 								<p>23 Aug 2015 (Rocket League) 1v1
 									<img src="images/cup.png" alt="cup">
 								</p>
+								<span>vs.</span>
 								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 latest-matches-box winner">
 									<div class="progress latest-matches-box-bar">
 										<span class="badge">70%</span>
@@ -313,39 +312,39 @@
 				<div class="col-xs-12 col-sm-4 profile-views">
 					<div class="col-xs-12">
 						<h5 class="text-center">Profile views (23)</h5>
-						<p class="col-xs-12 online-player">
+						<p class="col-xs-12 online">
 							<img src="images/team.png" alt="team">
-							Devil23 
+							<a href="#">Devil23</a> 
 							<span>23 Aug 2015</span>
 						</p>
 						<p class="col-xs-12">
 							<img src="images/team.png" alt="team">
-							Devil23 
+							<a href="#">Devil23</a> 
 							<span>23 Aug 2015</span>
 						</p>
 						<p class="col-xs-12">
 							<img src="images/team.png" alt="team">
-							Devil23 
+							<a href="#">Devil23</a> 
 							<span>23 Aug 2015</span>
 						</p>
-						<p class="col-xs-12 online-player">
+						<p class="col-xs-12 online">
 							<img src="images/team.png" alt="team">
-							Devil23 
+							<a href="#">Devil23</a> 
 							<span>23 Aug 2015</span>
 						</p>
-						<p class="col-xs-12 online-player">
+						<p class="col-xs-12 online">
 							<img src="images/team.png" alt="team">
-							Devil23 
-							<span>23 Aug 2015</span>
-						</p>
-						<p class="col-xs-12">
-							<img src="images/team.png" alt="team">
-							Devil23 
+							<a href="#">Devil23</a> 
 							<span>23 Aug 2015</span>
 						</p>
 						<p class="col-xs-12">
 							<img src="images/team.png" alt="team">
-							Devil23 
+							<a href="#">Devil23</a> 
+							<span>23 Aug 2015</span>
+						</p>
+						<p class="col-xs-12">
+							<img src="images/team.png" alt="team">
+							<a href="#">Devil23</a> 
 							<span>23 Aug 2015</span>
 						</p>	
 					</div>
@@ -357,9 +356,9 @@
 							<h6 class="text-center">20.11.2015</h6>
 							<ul class="col-xs-12">
 								<li>
-									<p class="col-xs-12 online-player">
+									<p class="col-xs-12 online">
 										<img src="images/team.png" alt="team">
-										Devil23 	
+										<a href="#">Devil23</a> 	
 									</p>
 								</li>
 								<li>
@@ -391,9 +390,9 @@
 									<span class="col-xs-2">16:59</span>
 								</li>
 								<li>
-									<p class="col-xs-12 online-player">
+									<p class="col-xs-12 online">
 										<img src="images/team.png" alt="team">
-										Crazy_Joe
+										<a href="#">Crazy_Joe</a>
 									</p>
 									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
 									<span class="col-xs-2">16:52</span>
@@ -406,9 +405,9 @@
 							<h6 class="text-center">19.11.2015</h6>
 							<ul class="col-xs-12">
 								<li>
-									<p class="col-xs-12 online-player">
+									<p class="col-xs-12 online">
 										<img src="images/team.png" alt="team">
-										Devil23 	
+										<a href="#">Devil23</a> 	
 									</p>
 								</li>
 								<li>
@@ -440,9 +439,9 @@
 									<span class="col-xs-2">16:59</span>
 								</li>
 								<li>
-									<p class="col-xs-12 online-player">
+									<p class="col-xs-12 online">
 										<img src="images/team.png" alt="team">
-										Crazy_Joe 
+										<a href="#">Crazy_Joe</a>
 									</p>
 									<p class="col-xs-10 chat-message">Can you guys please give ma a chance?</p>
 									<span class="col-xs-2">16:52</span>
@@ -454,7 +453,7 @@
 							</ul>
 						</div>
 						<form name="chat-message" id="chatMessage" class="new-message">
-							<textarea name="user-message" form="chatMessage" class="col-xs-12"></textarea>
+							<textarea name="user-message" form="chatMessage" class="col-xs-12" placeholder="Write here..."></textarea>
 							<input type="submit" name="submit-message" value="send" class="col-xs-4 col-sm-5 text-center">
 						</form>
 					</div>
