@@ -112,6 +112,10 @@
 	font-size: 18px;
 	margin-bottom: 0; 
 }
+.player-name-box h2 span{
+	margin-left: 10px;
+	font-weight: normal;
+}
 .player-name-box p{
 	font-size: 12px;
 }
@@ -178,7 +182,7 @@ a.active img{
 .featured-requests span{
 	float: right;
 }
-.featured-requests li:hover a, .featured-requests li:hover span{
+.featured-requests li a:hover, .featured-requests li span:hover{
 	color: #e43f3f;
 }
 .latest-matches-box-wrapper{
@@ -207,8 +211,9 @@ a.active img{
 	width: 20px;
 }
 .latest-matches-box{
-	padding-left: 0;
-	padding-bottom: 15px;
+	margin: 0 23px 15px 0;
+	padding: 0;
+	display: inline-block;
 	cursor: pointer;
 }
 .latest-matches-box:hover img{
@@ -582,12 +587,14 @@ p.chat-message{
 	.latest-matches-box-wrapper:nth-of-type(even) p img{
 		margin: 0 0 0 30px;
 	}
-	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box{
-		padding-right: 0;
+	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box, .latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box div{
 		float: right;
 	}
-	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box div{
-		float: right;
+	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box:nth-of-type(odd){
+		margin-right: 0;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box .box-bar-cover{
+		float: left;
 	}
 	.latest-matches-box-wrapper span{
 		margin: 60px 0 0 113px;
@@ -595,11 +602,43 @@ p.chat-message{
 	.latest-matches-box-wrapper:nth-of-type(even) span{
 		margin: 92px 0 0 133px;
 	}
+	div.progress.latest-matches-box-bar span{
+		margin: -25px 0 0 85px;
+	}
+}
+@-moz-document url-prefix() {
+	.progress .badge{
+		margin-left: -15px;
+	}
 	.latest-matches-box-wrapper .latest-matches-box .progress span{
-		margin: -20px 0 0 82px;
+		margin-left: 0;
 	}
-	.latest-matches-box-wrapper:nth-of-type(even) .latest-matches-box .box-bar-cover{
-		float: left;
+	div.progress.latest-matches-box-bar span{
+		margin-left: 0;
+		left: auto;
 	}
+	.latest-matches-box-wrapper span{
+			margin-left: 145px;
+			left: 0;
+		}
+	@media screen and (min-width: 768px){
+		.latest-matches-box-wrapper span{
+			margin-left: -205px;
+			left: auto;
+		}
+	}
+	@media screen and (min-width: 990px){
+		.latest-matches-box-wrapper span{
+			margin-left: -225px;
+		}
+	}
+	@media screen and (min-width: 1200px){
+		.latest-matches-box-wrapper span{
+			margin-left: -175px;
+		}
+		.latest-matches-box-wrapper:nth-of-type(even) span{
+			margin-top: 87px;
+			margin-left: 132px;
+		}
 	}
 }
