@@ -114,7 +114,6 @@
 }
 .player-name-box h2 span{
 	margin-left: 10px;
-	font-weight: normal;
 }
 .player-name-box p{
 	font-size: 12px;
@@ -246,7 +245,7 @@ a.active img{
 	font-weight: normal;
 }
 .latest-matches-box:hover p{
-	background: #1182f5;
+	background: #E43F3F;
 	color: #fff;
 }
 .img-cover-box{
@@ -290,11 +289,11 @@ a.active img{
 	margin: 2px 0 10px 0;
 }
 .featured-teams:hover p{
-	background: #1182f5;
+	background: #E43F3F;
 }
 .featured-teams img{
 	width: 120px;
-	border: 3px solid #1182f5;
+	border: 3px solid #E43F3F;
 }
 .featured-teams:hover img{
 	opacity: 0.5;
@@ -581,8 +580,11 @@ p.chat-message{
 		padding-right: 0;
 		float: right;
 	}
-	.latest-matches-box-wrapper:nth-of-type(even) p{
+	.latest-matches-box-wrapper:nth-of-type(even) div p{
 		float: right;
+	}
+	.latest-matches-box-wrapper:nth-of-type(even) p{
+		margin-left: 20px;
 	}
 	.latest-matches-box-wrapper:nth-of-type(even) p img{
 		margin: 0 0 0 30px;
@@ -597,10 +599,10 @@ p.chat-message{
 		float: left;
 	}
 	.latest-matches-box-wrapper span{
-		margin: 60px 0 0 113px;
+		margin: 60px 0 0 111px;
 	}
 	.latest-matches-box-wrapper:nth-of-type(even) span{
-		margin: 92px 0 0 133px;
+		margin: 63px 0 0 133px;
 	}
 	div.progress.latest-matches-box-bar span{
 		margin: -25px 0 0 85px;
@@ -635,10 +637,6 @@ p.chat-message{
 	@media screen and (min-width: 1200px){
 		.latest-matches-box-wrapper span{
 			margin-left: -175px;
-		}
-		.latest-matches-box-wrapper:nth-of-type(even) span{
-			margin-top: 87px;
-			margin-left: 132px;
 		}
 	}
 }
