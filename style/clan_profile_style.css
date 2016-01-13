@@ -508,7 +508,7 @@ p.chat-message{
 		border-right: 1px solid #d8d8d8; 
 	}
 	.latest-matches-box-wrapper span{
-		margin: 60px 0 0 110px;
+		margin: 60px 0 0 134px;
 	}
 	.game-levels-wrapper{
 		margin: 0;
@@ -540,7 +540,7 @@ p.chat-message{
 		width: 78px;
 	}
 	.latest-matches-box-wrapper span{
-		margin: 60px 0 0 118px;
+		margin: 60px 0 0 139px;
 	}
 }
 @media screen and (min-width: 1024px){
@@ -584,7 +584,7 @@ p.chat-message{
 		float: right;
 	}
 	.latest-matches-box-wrapper:nth-of-type(even) p{
-		margin-left: 20px;
+		margin-left: 30px;
 	}
 	.latest-matches-box-wrapper:nth-of-type(even) p img{
 		margin: 0 0 0 30px;
@@ -599,10 +599,10 @@ p.chat-message{
 		float: left;
 	}
 	.latest-matches-box-wrapper span{
-		margin: 60px 0 0 111px;
+		margin: 60px 0 0 120px;
 	}
 	.latest-matches-box-wrapper:nth-of-type(even) span{
-		margin: 63px 0 0 133px;
+		margin: 63px 0 0 147px;
 	}
 	div.progress.latest-matches-box-bar span{
 		margin: -25px 0 0 85px;
@@ -625,18 +625,18 @@ p.chat-message{
 		}
 	@media screen and (min-width: 768px){
 		.latest-matches-box-wrapper span{
-			margin-left: -205px;
+			margin-left: -230px;
 			left: auto;
 		}
 	}
 	@media screen and (min-width: 990px){
 		.latest-matches-box-wrapper span{
-			margin-left: -225px;
+			margin-left: -245px;
 		}
 	}
 	@media screen and (min-width: 1200px){
 		.latest-matches-box-wrapper span{
-			margin-left: -175px;
+			margin-left: -188px;
 		}
 	}
 }
