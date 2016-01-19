@@ -9,6 +9,13 @@ $(function (){
 		$(this).find("img").attr("src", "images/liked.png")
 	});
 
+	$(".player-avatar-wrapper").on("mouseenter", function(){
+		$(this).parent().find(".player-box-bar span").css("opacity", "1");
+	});
+	$(".player-avatar-wrapper").on("mouseleave", function(){
+		$(this).parent().find(".player-box-bar span").css("opacity", "0");
+	});
+
 	$("nav a").on("click", function(e){
 		e.preventDefault();
 		var url = this.href;

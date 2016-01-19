@@ -24,8 +24,8 @@
 .player-box-bar{
 	width: 120px;
 	height: 3px;
-	margin-top: -7px;
-	margin-bottom: 5px;
+	margin-top: -10px;
+	margin-bottom: 8px;
 	background: #d8d8d8;
 }
 .box-bar-cover{
@@ -33,12 +33,12 @@
 }
 .progress .badge{
 	position: absolute;
-    margin-top: -20px;
-    margin-left: 22px;
+    margin-top: -9px;
+    margin-left: -20px;
     background: #363636;
     opacity: 0;
 }
-.progress:hover .badge{
+.latest-matches-box:hover .badge{
 	opacity: 1;
 }
 .player-avatar-box{
@@ -163,6 +163,7 @@ a.active img{
 }
 .profile-list li{
 	padding: 0 0 10px 0;
+	cursor: pointer;
 }
 .profile-list.upcoming-matches li:hover{
 	color: #e43f3f;
@@ -190,7 +191,7 @@ a.active img{
 .latest-matches-box-wrapper p{
 	font-style: italic;
 	font-size: 12px;
-	margin: 0 0 15px 0;
+	margin: 5px 0 25px 0;
 	cursor: pointer;
 }
 .latest-matches-box-wrapper p:hover{
@@ -221,7 +222,7 @@ a.active img{
 .latest-matches-box-bar{
 	width: 120px;
 	height: 3px;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
 	background: #d8d8d8;
 }
 .progress.latest-matches-box-bar span{
@@ -358,11 +359,11 @@ a.active img{
 .profile-views p:hover{
 	background: #d8d8d8;
 }
-.profile-views p a{
+.profile-views a{
 	text-decoration: none;
 	color: #333;
 }
-.profile-views p a:hover, .profile-views p.online a:hover, .game-chat ul li p a:hover{
+.profile-views p:hover, .game-chat a:hover p{
 	color: #e43f3f;
 }
 .profile-views p span{
@@ -374,10 +375,10 @@ a.active img{
 	margin: 0 5px 0 0;
 	border: 2px solid #363636; 
 }
-.profile-views p.online a, .game-chat p.online a{
+.profile-views .online{
 	color: #1182f5;
 }
-.profile-views p.online span{
+.profile-views p.online span, .profile-views p span{
 	color: #333;
 }
 .profile-views p.online img{
@@ -426,7 +427,7 @@ a.active img{
 	font-size: 12px;
 	font-style: italic;
 }
-.game-chat p a{
+.game-chat a{
 	text-decoration: none;
 	color: #333;
 }
@@ -605,15 +606,15 @@ p.chat-message{
 		margin: 63px 0 0 147px;
 	}
 	div.progress.latest-matches-box-bar span{
-		margin: -25px 0 0 85px;
+		margin: -9px 0 0 40px;
 	}
 }
 @-moz-document url-prefix() {
 	.progress .badge{
-		margin-left: -15px;
+		margin-left: -63px;
 	}
 	.latest-matches-box-wrapper .latest-matches-box .progress span{
-		margin-left: 0;
+		margin-left: -43px;
 	}
 	div.progress.latest-matches-box-bar span{
 		margin-left: 0;
