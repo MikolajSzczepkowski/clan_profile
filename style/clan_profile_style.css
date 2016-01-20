@@ -199,12 +199,13 @@ a.active img{
 }
 .latest-matches-box-wrapper span{
 	margin: 140px 0 0 130px;
-	padding: 0 8px 2px 8px;
+	padding: 0 10px 2px 10px;
 	position: absolute;
 	background: #e43f3f;
 	color: #fff;
+	border: 1px solid #fff;
 	font-weight: bold; 
-	border-radius: 5px;
+	border-radius: 12px;
 	z-index: 5;
 }
 .latest-matches-box-wrapper p img{
@@ -226,7 +227,7 @@ a.active img{
 	background: #d8d8d8;
 }
 .progress.latest-matches-box-bar span{
-	margin-left: 82px;
+	margin-left: 40px;
 	padding: 3px 7px;
 	border-radius: 10px;
 }
@@ -509,7 +510,7 @@ p.chat-message{
 		border-right: 1px solid #d8d8d8; 
 	}
 	.latest-matches-box-wrapper span{
-		margin: 60px 0 0 134px;
+		margin: 60px 0 0 130px;
 	}
 	.game-levels-wrapper{
 		margin: 0;
@@ -541,7 +542,7 @@ p.chat-message{
 		width: 78px;
 	}
 	.latest-matches-box-wrapper span{
-		margin: 60px 0 0 139px;
+		margin: 60px 0 0 137px;
 	}
 }
 @media screen and (min-width: 1024px){
@@ -600,10 +601,10 @@ p.chat-message{
 		float: left;
 	}
 	.latest-matches-box-wrapper span{
-		margin: 60px 0 0 120px;
+		margin: 60px 0 0 117px;
 	}
 	.latest-matches-box-wrapper:nth-of-type(even) span{
-		margin: 63px 0 0 147px;
+		margin: 63px 0 0 144px;
 	}
 	div.progress.latest-matches-box-bar span{
 		margin: -9px 0 0 40px;
@@ -626,18 +627,18 @@ p.chat-message{
 		}
 	@media screen and (min-width: 768px){
 		.latest-matches-box-wrapper span{
-			margin-left: -230px;
+			margin-left: -233px;
 			left: auto;
 		}
 	}
 	@media screen and (min-width: 990px){
 		.latest-matches-box-wrapper span{
-			margin-left: -245px;
+			margin-left: -248px;
 		}
 	}
 	@media screen and (min-width: 1200px){
 		.latest-matches-box-wrapper span{
-			margin-left: -188px;
+			margin-left: -191px;
 		}
 	}
 }
