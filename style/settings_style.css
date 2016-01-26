@@ -92,6 +92,45 @@
 	font-weight: bold;
 	border: none;
 }
+.listed-players{
+	padding: 0;
+}
+.listed-players>div{
+	width: 120px;
+	cursor: pointer;
+}
+.listed-players h6{
+	font-style: italic;
+}
+.listed-players img{
+	width: 120px;
+	margin-bottom: 2px;
+	padding: 0;
+	border: 3px solid #363636;
+}
+.listed-players div.progress.latest-matches-box-bar span{
+	margin-left: -61px;	
+}
+.listed-players>div:hover .latest-matches-box-bar span{
+	opacity: 1;
+}
+.listed-players p{
+	background: #363636;
+	color: #fff;
+	font-size: 12px;
+	font-style: italic;
+}
+.listed-players button{
+	height: 32px;
+	margin-bottom: 10px;
+	background: #363636;
+	color: #fff;
+	border: none;
+	font-weight: bold;
+}
+.listed-players button:hover, .listed-players button.selected{
+	background: #e43f3f;
+}
 @media screen and (min-width: 480px){
 	.settings-wrapper:nth-of-type(1) label{
 		margin-bottom: 14px;

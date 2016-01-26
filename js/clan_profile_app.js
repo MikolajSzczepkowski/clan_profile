@@ -39,4 +39,15 @@ $(function (){
 			}
 		});
 	});
+
+	$(document).on("click", ".listed-players button", function(e){
+		e.preventDefault();
+		if (!$(this).hasClass("selected")) {
+			$(this).siblings().removeClass("selected");
+			$(this).addClass("selected");
+		}
+		else{
+			$(this).removeClass("selected");
+		}
+	});
 });
