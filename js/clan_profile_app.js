@@ -15,6 +15,12 @@ $(function (){
 			$(this).removeClass("liked");
 		}
 	});
+	$(document).on("click", ".radio", function(){
+		if (!$(this).hasClass("active")) {
+			$(".radio").removeClass("active");
+			$(this).addClass("active");
+		}
+	});
 
 	$(".player-avatar-wrapper").on("mouseenter", function(){
 		$(this).parent().find(".player-box-bar span").css("opacity", "1");
