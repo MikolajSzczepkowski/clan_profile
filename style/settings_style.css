@@ -10,6 +10,9 @@
 	padding-bottom: 10px;
 	border-bottom: 1px solid #d8d8d8;
 }
+.settings-wrapper:last-child{
+	border-bottom: none;
+}
 .settings-wrapper>div{
 	padding-left: 0;
 }
@@ -87,6 +90,8 @@
 	visibility: hidden;
 }
 .settings-wrapper input[type="submit"]{
+	margin: 10px 0;
+	float: right;
 	background: #e43f3f;
 	color: #fff;
 	font-weight: bold;
@@ -111,8 +116,14 @@
 .listed-players div.progress.latest-matches-box-bar span{
 	margin-left: -61px;	
 }
-.listed-players>div:hover .latest-matches-box-bar span{
+.listed-players>div>div:hover .latest-matches-box-bar span{
 	opacity: 1;
+}
+.listed-players>div>div:hover img{
+	opacity: 0.5;
+}
+.listed-players>div>div:hover p{
+	background: #e43f3f;
 }
 .listed-players p{
 	background: #363636;
@@ -138,9 +149,4 @@
 	.settings-wrapper:nth-of-type(1) input{
 		margin-bottom: 0;
 	}
-}
-@media screen and (min-width: 990px){
-	.settings-wrapper input[type="submit"]{
-		margin: -47px 0 0 80px;
-	}	
 }
