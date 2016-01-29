@@ -114,7 +114,7 @@
 	border: 3px solid #363636;
 }
 .listed-players div.progress.latest-matches-box-bar span{
-	margin-left: -61px;	
+	margin-left: -18px;	
 }
 .listed-players>div>div:hover .latest-matches-box-bar span{
 	opacity: 1;
@@ -148,5 +148,10 @@
 	}
 	.settings-wrapper:nth-of-type(1) input{
 		margin-bottom: 0;
+	}
+}
+@-moz-document url-prefix() {
+	.listed-players div.progress.latest-matches-box-bar span{
+		margin-left: -61px;	
 	}
 }
