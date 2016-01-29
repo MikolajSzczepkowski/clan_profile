@@ -165,7 +165,11 @@ a.active img{
 	padding: 0 0 10px 0;
 	cursor: pointer;
 }
-.profile-list.upcoming-matches li:hover{
+.profile-list.upcoming-matches li a{
+	text-decoration: none;
+	color: #333;
+}
+.profile-list.upcoming-matches li:hover a{
 	color: #e43f3f;
 }
 .profile-list img{
@@ -194,7 +198,11 @@ a.active img{
 	margin: 5px 0 25px 0;
 	cursor: pointer;
 }
-.latest-matches-box-wrapper p:hover{
+.latest-matches-box-wrapper p a{
+	text-decoration: none;
+	color: #333;
+}
+.latest-matches-box-wrapper p:hover a{
 	color: #e43f3f;
 }
 .latest-matches-box-wrapper span{

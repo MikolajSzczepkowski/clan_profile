@@ -11,122 +11,126 @@
 	<link rel="stylesheet" href="./style/settings_style.css">
 </head>
 <body>
-<div class="bottom-main">
-	<div class="bottom-inner-wrapper">
-		<form name="settings" id="settings" class="col-xs-12 settings">
-			<div class="col-xs-12 settings-wrapper">
-				<div class="col-xs-12 col-md-8">
-					<div class="col-xs-4 col-sm-3 img-holder">
-						<img src="images/playstation.png">
-					</div>
-					<label for="changePsnId" class="col-xs-8 col-sm-9 text-uppercase text-center">change psn id</label>
-					<input type="text" id="changePsnId" class="col-xs-8 col-sm-9">
-				</div>
-				<div class="col-xs-12 col-md-8">
-					<div class="col-xs-4 col-sm-3 img-holder">
-						<img src="images/xbox.png">
-					</div>
-					<label for="changeXboxLive" class="col-xs-8 col-sm-9 text-uppercase text-center">change xbox live</label>
-					<input type="text" id="changeXboxLive" class="col-xs-8 col-sm-9">
-				</div>
-			</div>
-			<div class="col-xs-12 settings-wrapper">
-				<div class="col-xs-12 col-md-8">
-					<h5 class="col-xs-12 text-uppercase text-center">change your information</h5>
-					<textarea name="change-information" form="settings" class="col-xs-12" placeholder="Write here..."></textarea>
-				</div>
-			</div>
-			<div class="col-xs-12 settings-wrapper">
-				<div class="col-xs-12 col-md-8">
-					<label for="changeName" class="col-xs-12 col-sm-4 col-md-3 text-uppercase text-center">name</label>
-					<input type="text" id="changeName" class="col-xs-12 col-sm-8 col-md-9">
-					<label for="changeCoutry" class="col-xs-12 col-sm-4 col-md-3 text-uppercase text-center">country</label>
-					<input type="text" id="changeCountry" class="col-xs-12 col-sm-8 col-md-9">
-					<p class="col-xs-12 col-sm-4 col-md-3 text-uppercase text-center">gender</p>
-					<label for="male" class="col-xs-6 col-sm-3 col-lg-2 text-center radio">Male</label>
-					<input type="radio" id="male" value="male">
-					<label for="female" class="col-xs-6 col-sm-3 col-lg-2 text-center radio">Female</label>
-					<input type="radio" id="female" value="female">
-					<label for="currentPassword" class="col-xs-12 col-sm-6 text-uppercase text-center small-margin">currnet password</label>
-					<input type="password" id="currentPassword" class="col-xs-12">
-					<label for="newPassword" class="col-xs-12 col-sm-6 text-uppercase text-center small-margin">new password</label>
-					<input type="password" id="newPassword" class="col-xs-12">
-					<label for="repeatPassword" class="col-xs-12 col-sm-6 text-uppercase text-center small-margin">repeat password</label>
-					<input type="password" id="repeatPassword" class="col-xs-12">
-				</div>
-			</div>
-			<div class="col-xs-12 settings-wrapper">
-				<div class="col-xs-12">
-					<div class="col-xs-12 col-sm-6 col-md-4 text-center listed-players">
-						<div>
-							<h6>Leader</h6>
-							<div>
-								<div class="progress latest-matches-box-bar">
-									<span class="badge">70%</span>
-									<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
-								</div>
-								<img src="images/player-avatar.jpg">
-								<p class="col-xs-12">Player Amazing</p>
+<div id="content-wrapper">
+	<div id="content">
+		<div class="col-xs-12 col-sm-7 bottom-main">
+			<div class="bottom-inner-wrapper">
+				<form name="settings" id="settings" class="col-xs-12 settings">
+					<div class="col-xs-12 settings-wrapper">
+						<div class="col-xs-12 col-md-8">
+							<div class="col-xs-4 col-sm-3 img-holder">
+								<img src="images/playstation.png">
 							</div>
-							<button class="col-xs-12 text-center text-uppercase">leader</button>
-							<button class="col-xs-12 text-center text-uppercase">co-leader</button>
-							<button class="col-xs-12 text-center text-uppercase">player</button>
+							<label for="changePsnId" class="col-xs-8 col-sm-9 text-uppercase text-center">change psn id</label>
+							<input type="text" id="changePsnId" class="col-xs-8 col-sm-9">
+						</div>
+						<div class="col-xs-12 col-md-8">
+							<div class="col-xs-4 col-sm-3 img-holder">
+								<img src="images/xbox.png">
+							</div>
+							<label for="changeXboxLive" class="col-xs-8 col-sm-9 text-uppercase text-center">change xbox live</label>
+							<input type="text" id="changeXboxLive" class="col-xs-8 col-sm-9">
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 text-center listed-players">
-						<div>
-							<h6>Co-leader</h6>
-							<div>
-								<div class="progress latest-matches-box-bar">
-									<span class="badge">70%</span>
-									<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
-								</div>
-								<img src="images/player-avatar.jpg">
-								<p class="col-xs-12">Player Amazing</p>
-							</div>
-							<button class="col-xs-12 text-center text-uppercase">leader</button>
-							<button class="col-xs-12 text-center text-uppercase">co-leader</button>
-							<button class="col-xs-12 text-center text-uppercase">player</button>
+					<div class="col-xs-12 settings-wrapper">
+						<div class="col-xs-12 col-md-8">
+							<h5 class="col-xs-12 text-uppercase text-center">change your information</h5>
+							<textarea name="change-information" form="settings" class="col-xs-12" placeholder="Write here..."></textarea>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 text-center listed-players">
-						<div>
-							<h6>Player</h6>
-							<div>
-								<div class="progress latest-matches-box-bar">
-									<span class="badge">70%</span>
-									<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
-								</div>
-								<img src="images/player-avatar.jpg">
-								<p class="col-xs-12">Player Amazing</p>
-							</div>
-							<button class="col-xs-12 text-center text-uppercase">leader</button>
-							<button class="col-xs-12 text-center text-uppercase">co-leader</button>
-							<button class="col-xs-12 text-center text-uppercase">player</button>
+					<div class="col-xs-12 settings-wrapper">
+						<div class="col-xs-12 col-md-8">
+							<label for="changeName" class="col-xs-12 col-sm-4 col-md-3 text-uppercase text-center">name</label>
+							<input type="text" id="changeName" class="col-xs-12 col-sm-8 col-md-9">
+							<label for="changeCoutry" class="col-xs-12 col-sm-4 col-md-3 text-uppercase text-center">country</label>
+							<input type="text" id="changeCountry" class="col-xs-12 col-sm-8 col-md-9">
+							<p class="col-xs-12 col-sm-4 col-md-3 text-uppercase text-center">gender</p>
+							<label for="male" class="col-xs-6 col-sm-3 col-lg-2 text-center radio">Male</label>
+							<input type="radio" id="male" value="male">
+							<label for="female" class="col-xs-6 col-sm-3 col-lg-2 text-center radio">Female</label>
+							<input type="radio" id="female" value="female">
+							<label for="currentPassword" class="col-xs-12 col-sm-6 text-uppercase text-center small-margin">currnet password</label>
+							<input type="password" id="currentPassword" class="col-xs-12">
+							<label for="newPassword" class="col-xs-12 col-sm-6 text-uppercase text-center small-margin">new password</label>
+							<input type="password" id="newPassword" class="col-xs-12">
+							<label for="repeatPassword" class="col-xs-12 col-sm-6 text-uppercase text-center small-margin">repeat password</label>
+							<input type="password" id="repeatPassword" class="col-xs-12">
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 text-center listed-players">
-						<div>
-							<h6>Player</h6>
-							<div>
-								<div class="progress latest-matches-box-bar">
-									<span class="badge">70%</span>
-									<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+					<div class="col-xs-12 settings-wrapper">
+						<div class="col-xs-12">
+							<div class="col-xs-12 col-sm-6 col-md-4 text-center listed-players">
+								<div>
+									<h6>Leader</h6>
+									<div>
+										<div class="progress latest-matches-box-bar">
+											<span class="badge">70%</span>
+											<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+										</div>
+										<img src="images/player-avatar.jpg">
+										<p class="col-xs-12">Player Amazing</p>
+									</div>
+									<button class="col-xs-12 text-center text-uppercase">leader</button>
+									<button class="col-xs-12 text-center text-uppercase">co-leader</button>
+									<button class="col-xs-12 text-center text-uppercase">player</button>
 								</div>
-								<img src="images/player-avatar.jpg">
-								<p class="col-xs-12">Player Amazing</p>
 							</div>
-							<button class="col-xs-12 text-center text-uppercase">leader</button>
-							<button class="col-xs-12 text-center text-uppercase">co-leader</button>
-							<button class="col-xs-12 text-center text-uppercase">player</button>
+							<div class="col-xs-12 col-sm-6 col-md-4 text-center listed-players">
+								<div>
+									<h6>Co-leader</h6>
+									<div>
+										<div class="progress latest-matches-box-bar">
+											<span class="badge">70%</span>
+											<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+										</div>
+										<img src="images/player-avatar.jpg">
+										<p class="col-xs-12">Player Amazing</p>
+									</div>
+									<button class="col-xs-12 text-center text-uppercase">leader</button>
+									<button class="col-xs-12 text-center text-uppercase">co-leader</button>
+									<button class="col-xs-12 text-center text-uppercase">player</button>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 text-center listed-players">
+								<div>
+									<h6>Player</h6>
+									<div>
+										<div class="progress latest-matches-box-bar">
+											<span class="badge">70%</span>
+											<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+										</div>
+										<img src="images/player-avatar.jpg">
+										<p class="col-xs-12">Player Amazing</p>
+									</div>
+									<button class="col-xs-12 text-center text-uppercase">leader</button>
+									<button class="col-xs-12 text-center text-uppercase">co-leader</button>
+									<button class="col-xs-12 text-center text-uppercase">player</button>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 text-center listed-players">
+								<div>
+									<h6>Player</h6>
+									<div>
+										<div class="progress latest-matches-box-bar">
+											<span class="badge">70%</span>
+											<div class="progress-bar box-bar-cover" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+										</div>
+										<img src="images/player-avatar.jpg">
+										<p class="col-xs-12">Player Amazing</p>
+									</div>
+									<button class="col-xs-12 text-center text-uppercase">leader</button>
+									<button class="col-xs-12 text-center text-uppercase">co-leader</button>
+									<button class="col-xs-12 text-center text-uppercase">player</button>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
+					<div class="col-xs-12 settings-wrapper">
+						<input type="submit" name="save-settings" value="save" class="col-xs-12 col-sm-3">
+					</div>
+				</form>
 			</div>
-			<div class="col-xs-12 settings-wrapper">
-				<input type="submit" name="save-settings" value="save" class="col-xs-12 col-sm-3">
-			</div>
-		</form>
+		</div>
 	</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

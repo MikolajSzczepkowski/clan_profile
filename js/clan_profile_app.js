@@ -41,7 +41,20 @@ $(function (){
 			dataType: "html",
 			type: "GET",
 			success: function(data){
-				$(".bottom-main").html($(data).find(".bottom-inner-wrapper")).hide().fadeIn(500);
+				$("#content-wrapper").html($(data).find("#content")).hide().fadeIn(500);
+			}
+		});
+	});
+	$(document).on("click", "a.match-link", function(e){
+		e.preventDefault();
+		var url = this.href;
+
+		$.ajax({
+			url: url,
+			dataType: "html",
+			type: "GET",
+			success: function(data){
+				$("#content-wrapper").html($(data).find("#content")).hide().fadeIn(500);
 			}
 		});
 	});
