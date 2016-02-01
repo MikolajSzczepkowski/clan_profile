@@ -300,7 +300,7 @@ a.active img{
 	margin: 2px 0 10px 0;
 }
 .featured-teams:hover .badge{
-	margin: -8px 0 0 -19px;
+	margin: -8px 0 0 -21px;
 }
 .featured-teams:hover p{
 	background: #E43F3F;
@@ -634,7 +634,7 @@ p.chat-message{
 		left: auto;
 	}
 	.featured-teams:hover .badge{
-		margin: -8px 0 0 -60px;
+		margin: -8px 0 0 -63px;
 	}
 	.latest-matches-box-wrapper span{
 			margin-left: 145px;
