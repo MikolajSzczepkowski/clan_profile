@@ -15,8 +15,18 @@
 	padding: 0;
 	background: #e43f3f;
 }
+.top-row-social a{
+	width: 35px;
+	margin-right: 5px;
+	text-decoration: none;
+	color: #fff;
+}
+.top-row-social div img{
+	margin: -7px 0 0 0;
+	float: left;
+}
 .top-row-social{
-	width: 42px;
+	margin-bottom: 5px;
 }
 .player-box{
 	margin: -1px 0 0 0;
@@ -536,12 +546,6 @@ p.chat-message{
 	}
 }
 @media screen and (min-width: 990px){
-	.top-row{
-		height: 300px;
-	}
-	.top-row-social{
-		width: 45px;
-	}
 	.bottom-align{
 		position: absolute;
 		margin: 265px 0 0 0;
@@ -620,6 +624,10 @@ p.chat-message{
 	}
 	div.progress.latest-matches-box-bar span{
 		margin: -9px 0 0 40px;
+	}
+	.top-row-social{
+		margin-left: 5px;
+		margin-bottom: 0;
 	}
 }
 @-moz-document url-prefix() {
