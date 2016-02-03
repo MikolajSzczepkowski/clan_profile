@@ -1,6 +1,44 @@
 .main-inner-wrapper{
 	padding: 30px 20px 0 20px;
 }
+#requestContainer{
+	top: 500px;
+}
+.request-wrapper{
+	padding: 20px 30px;
+	background: rgba(0, 0, 0, 0.8);
+	border-top: 3px solid #e43f3f;
+	border-bottom: 3px solid #e43f3f;
+}
+.request-wrapper textarea{
+	height: 100px;
+	margin: 30px 0 10px 0;
+	padding: 5px;
+	background: none;
+	color: #fff;
+	border: 1px solid #fff;
+	resize: none;
+}
+.request-wrapper input{
+	margin: 0 0 10px 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #e43f3f;
+	border: none;
+	color: #fff;
+	font-style: italic;
+}
+.request-wrapper input:hover{
+	background: #363636;
+}
+.request-text-box{
+	margin-bottom: 5px;
+	background: #f4f4f4;
+	border-left: 3px solid #e43f3f;
+}
+.request-wrapper form{
+	padding: 0;
+}
 .top-row{
 	width: 100%;
 	margin: 0;
@@ -51,6 +89,9 @@
 }
 .latest-matches-box:hover .badge, .featured-teams:hover .badge{
 	opacity: 1;
+}
+.player-avatar-wrapper{
+	cursor: pointer;
 }
 .player-avatar-box{
 	width: 120px;
@@ -546,6 +587,9 @@ p.chat-message{
 	}
 }
 @media screen and (min-width: 990px){
+	#requestContainer{
+		top: 100px;
+	}
 	.bottom-align{
 		position: absolute;
 		margin: 265px 0 0 0;

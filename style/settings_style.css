@@ -36,8 +36,8 @@
 	padding: 21.5px;
 	background: #e43f3f;
 }
-.settings-wrapper label, .settings-wrapper:nth-of-type(3) p{
-	margin: 0 0 15px 0;
+.settings-wrapper label, .settings-wrapper.user-data p{
+	margin: 0;
 	padding-top: 6px;
 	padding-bottom: 6px;
 	background: #e43f3f;
@@ -56,7 +56,6 @@
 	margin-bottom: 15px;
 }
 .settings-wrapper h5{
-	margin-top: 30px;
 	padding-top: 8px;
 	padding-bottom: 8px; 
 	background: #e43f3f;
@@ -69,26 +68,26 @@
 	resize: none;
 	border: 1px solid #d8d8d8;
 }
-.settings-wrapper:nth-of-type(3){
+.settings-wrapper.user-data{
 	margin-top: 30px;
 }
-.settings-wrapper:nth-of-type(3) label, .settings-wrapper:nth-of-type(3) p{
+.settings-wrapper.user-data label, .settings-wrapper.user-data p{
 	padding: 6px 0;
 	background: #363636;
 }
-.settings-wrapper:nth-of-type(3) input{
+.settings-wrapper.user-data input{
 	border: 2px solid #363636; 	
 }
-.settings-wrapper:nth-of-type(3) .radio{
+.settings-wrapper.user-data .radio{
 	padding: 4px 0;
 	background: #e43f3f;
 	border: 2px solid #363636;
 	cursor: pointer;
 }
-.settings-wrapper:nth-of-type(3) .radio:nth-of-type(odd){
+.settings-wrapper.user-data .radio:nth-of-type(odd){
 	border-right: none;
 }
-.settings-wrapper:nth-of-type(3) .radio.active, .settings-wrapper:nth-of-type(3) .radio:hover, .settings-wrapper input[type="submit"]:hover{
+.settings-wrapper.user-data .radio.active, .settings-wrapper.user-data .radio:hover, .settings-wrapper input[type="submit"]:hover{
 	background: #363636;
 }
 .settings-wrapper input[type="radio"]{
@@ -110,6 +109,9 @@
 	width: 120px;
 	cursor: pointer;
 }
+.listed-players>div>div{
+	padding: 0;
+}
 .listed-players h6{
 	font-style: italic;
 }
@@ -122,13 +124,13 @@
 .listed-players div.progress.latest-matches-box-bar span{
 	margin-left: -18px;	
 }
-.listed-players>div>div:hover .latest-matches-box-bar span{
+.listed-players>div div:hover .latest-matches-box-bar span{
 	opacity: 1;
 }
-.listed-players>div>div:hover img{
+.listed-players>div div:hover img{
 	opacity: 0.5;
 }
-.listed-players>div>div:hover p{
+.listed-players>div div:hover p{
 	background: #e43f3f;
 }
 .listed-players p{
@@ -139,7 +141,7 @@
 }
 .listed-players button{
 	height: 32px;
-	margin-bottom: 10px;
+	margin: 5px 0;
 	background: #363636;
 	color: #fff;
 	border: none;
