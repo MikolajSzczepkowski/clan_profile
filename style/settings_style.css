@@ -27,8 +27,7 @@
 }
 .settings-wrapper .img-holder{
 	padding-left: 0;
-	margin-left: -9px;
-	margin-right: 9px
+	margin-left: -10px;
 }
 .settings-wrapper img{
 	margin-bottom: 10px;
@@ -37,7 +36,7 @@
 	background: #e43f3f;
 }
 .settings-wrapper label, .settings-wrapper.user-data p{
-	margin: 0;
+	margin: 0 0 15px 0;
 	padding-top: 6px;
 	padding-bottom: 6px;
 	background: #e43f3f;
