@@ -101,6 +101,12 @@
 	font-weight: bold;
 	border: none;
 }
+.team-tag{
+	margin-top: 15px;
+}
+.team-tag label{
+	background: #363636;
+}
 .listed-players{
 	padding: 0;
 }

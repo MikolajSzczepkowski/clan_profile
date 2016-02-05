@@ -158,6 +158,7 @@
 }
 .player-icon a.pending{
 	background: #363636;
+	cursor: default;
 }
 .player-icon a.pending:hover img{
 	transform: none;
@@ -355,7 +356,7 @@ a.active img{
 .winner .latest-matches-img{
 	border: 3px solid #e43f3f;
 }
-.winner .img-cover-box{
+.winner .img-cover-box, .winner p{
 	background: #e43f3f;
 }
 .featured-teams{

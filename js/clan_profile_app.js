@@ -74,6 +74,6 @@ $(function (){
 	$(document).on("click", "#requestButton", function(){
 		$(this).addClass("pending");
 		$(this).attr("title", "pending");
-		$(this).attr("data-target", "#requestReceivedContainer");
+		$(this).prop("disabled", true);
 	});
 });
