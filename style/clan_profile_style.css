@@ -114,6 +114,7 @@
 	width: 120px;
 	margin: 0 auto;
 	display: block;
+	position: relative;
 }
 .player-avatar-wrapper:hover .player-avatar-box{
 	opacity: 0.5;
