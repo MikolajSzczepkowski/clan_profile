@@ -39,6 +39,13 @@
 .request-wrapper form{
 	padding: 0;
 }
+.request-wrapper p{
+	margin-top: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border:1px solid #fff;
+	color: #fff;
+}
 .top-row{
 	width: 100%;
 	margin: 0;
@@ -54,10 +61,14 @@
 	background: #e43f3f;
 }
 .top-row-social a{
-	width: 35px;
+	width: 16px;
+	padding: 0;
 	margin-right: 5px;
 	text-decoration: none;
 	color: #fff;
+}
+.top-row-social a img{
+	width: 16px;
 }
 .top-row-social div img{
 	margin: -7px 0 0 0;
@@ -133,6 +144,12 @@
 	height: 35px;
 	padding: 0;
 	background: #e43f3f;
+}
+.player-icon a.pending{
+	background: #363636;
+}
+.player-icon a.pending:hover img{
+	transform: none;
 }
 .player-box p{
 	width: 120px;
@@ -587,6 +604,9 @@ p.chat-message{
 	}
 }
 @media screen and (min-width: 990px){
+	.top-row {
+	    height: 300px;
+	}
 	#requestContainer{
 		top: 100px;
 	}

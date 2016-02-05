@@ -1,4 +1,5 @@
 $(function (){
+
 	$(document).on("click", ".profile-menu a", function(){
 		if (!$(this).hasClass("active")) {
 			$(".profile-menu a").removeClass("active");
@@ -68,5 +69,11 @@ $(function (){
 		else{
 			$(this).removeClass("selected");
 		}
+	});
+
+	$(document).on("click", "#requestButton", function(){
+		$(this).addClass("pending");
+		$(this).attr("title", "pending");
+		$(this).attr("data-target", "#requestReceivedContainer");
 	});
 });
