@@ -61,7 +61,8 @@
 	background: #e43f3f;
 }
 .top-row-social a{
-	width: 16px;
+	width: 32px;
+	height: 32px;
 	padding: 0;
 	margin-right: 5px;
 	text-decoration: none;
@@ -69,6 +70,8 @@
 }
 .top-row-social a img{
 	width: 16px;
+	margin-top: 8px;
+	margin-left: 8px;
 }
 .top-row-social div img{
 	margin: -7px 0 0 0;
