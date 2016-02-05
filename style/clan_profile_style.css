@@ -102,6 +102,7 @@
 	opacity: 1;
 }
 .player-avatar-wrapper{
+	position: relative;
 	cursor: pointer;
 }
 .player-avatar-box{
@@ -109,12 +110,17 @@
 	border: 3px solid #e43f3f;
 	cursor: pointer;
 }
+.player-avatar-wrapper .player-avatar-container{
+	width: 120px;
+	margin: 0 auto;
+	display: block;
+}
 .player-avatar-wrapper:hover .player-avatar-box{
 	opacity: 0.5;
 }
 .player-edit{
 	right: 0;
-	margin: 3px 35px 0 0;
+	margin: 3px 20px 0 0;
 	padding: 0;
 	position: absolute;
 	z-index: 2;
