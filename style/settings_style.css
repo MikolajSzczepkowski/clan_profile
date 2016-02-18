@@ -139,6 +139,7 @@
 	background: #e43f3f;
 }
 .listed-players p{
+	padding: 2px 0;
 	background: #363636;
 	color: #fff;
 	font-size: 12px;
