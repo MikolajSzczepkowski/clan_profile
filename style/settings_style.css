@@ -25,7 +25,7 @@
 .settings-wrapper:nth-of-type(1)>div{
 	padding-right: 5px;
 }
-.settings-wrapper .img-holder{
+.settings-wrapper .img-wrapper{
 	padding-left: 0;
 	margin-left: -10px;
 }
